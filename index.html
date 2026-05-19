@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leva Nu Pty Ltd — Australian autonomy software</title>
+  <meta name="description" content="Leva Nu Pty Ltd is the Australian parent company behind Sture, the mission-to-machine platform for autonomous mobile machines across air, ground, and water." />
+  <meta name="theme-color" content="#0071FE" />
+  <meta name="author" content="Leva Nu Pty Ltd" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Leva Nu Pty Ltd — Australian autonomy software" />
+  <meta property="og:description" content="The Australian parent company behind Sture, the mission-to-machine platform for autonomous mobile machines." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://levanu.com.au" />
+  <meta property="og:site_name" content="Leva Nu Pty Ltd" />
+  <meta property="og:locale" content="en_AU" />
+
+  <link rel="canonical" href="https://levanu.com.au" />
+
+  <style>
+    :root {
+      /* Sampled directly from logo.jpg corners (8,419/10,000 px). */
+      --brand-blue: #0071FE;
+      --brand-blue-deep: #005ECC;
+      --bg: #ffffff;
+      --bg-quiet: #f7f8fa;
+      --text: #0a0e14;
+      --text-muted: #5a626c;
+      --text-faint: #8b929c;
+      --border: #e6e8ec;
+      --max-width: 1100px;
+      --text-width: 680px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--brand-blue);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+    a:hover { border-bottom-color: var(--brand-blue); }
+
+    /* ─── Hero (blue) ────────────────────────────────────────────── */
+    .hero {
+      background: var(--brand-blue);
+      color: #ffffff;
+      padding: 72px 32px 96px;
+    }
+
+    .hero__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .hero__logo {
+      display: block;
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      margin: 0 0 56px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+      margin: 0 0 28px;
+      max-width: 880px;
+    }
+
+    .hero .tagline {
+      font-size: clamp(17px, 1.5vw, 21px);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.88);
+      margin: 0 0 28px;
+      max-width: var(--text-width);
+    }
+
+    .hero .tagline a {
+      color: #ffffff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .hero .tagline a:hover { border-bottom-color: #ffffff; }
+
+    .hero .meta {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.72);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    /* ─── Main content (white) ───────────────────────────────────── */
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 96px 32px 64px;
+    }
+
+    section { margin-bottom: 96px; }
+    section:last-child { margin-bottom: 0; }
+
+    section h2 {
+      font-size: clamp(24px, 2.8vw, 32px);
+      line-height: 1.25;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      color: var(--text);
+      margin: 0 0 24px;
+      max-width: 900px;
+    }
+
+    section p {
+      margin: 0 0 20px;
+      max-width: var(--text-width);
+      color: var(--text);
+    }
+    section p:last-of-type { margin-bottom: 0; }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brand-blue);
+      margin: 0 0 16px;
+      font-weight: 600;
+    }
+
+    /* ─── Product card ──────────────────────────────────────────── */
+    .product-card {
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 32px;
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+      background: var(--bg-quiet);
+    }
+
+    .product-card__kicker {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brand-blue);
+      font-weight: 600;
+    }
+
+    .product-card__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .product-card__body {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .product-card__link {
+      font-size: 14px;
+      margin-top: 8px;
+      border-bottom-color: var(--brand-blue);
+      padding-bottom: 2px;
+      align-self: flex-start;
+      font-weight: 500;
+    }
+
+    /* ─── Company facts ─────────────────────────────────────────── */
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px 48px;
+      margin-top: 32px;
+      max-width: 720px;
+    }
+
+    .fact {
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .fact dt {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .fact dd {
+      margin: 0;
+      font-size: 16px;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ─── Contact ───────────────────────────────────────────────── */
+    .contact .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      margin: 24px 0 56px;
+      font-size: 17px;
+    }
+
+    .contact .links a {
+      border-bottom-color: var(--brand-blue);
+      padding-bottom: 3px;
+      font-weight: 500;
+    }
+
+    .footer {
+      font-size: 13px !important;
+      color: var(--text-faint) !important;
+      letter-spacing: 0.04em;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      max-width: none;
+    }
+
+    /* ─── Responsive ────────────────────────────────────────────── */
+    @media (max-width: 720px) {
+      .facts { grid-template-columns: 1fr; gap: 20px; }
+    }
+
+    @media (max-width: 520px) {
+      .hero { padding: 56px 24px 72px; }
+      .hero__logo { max-width: 320px; margin-bottom: 40px; }
+      main { padding: 64px 24px 56px; }
+      section { margin-bottom: 72px; }
+      .hero .tagline { font-size: 16px; }
+      .product-card { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero__inner">
+      <img class="hero__logo" src="logo.jpg" alt="Leva Nu" width="1500" height="1000" />
+      <h1>Australian autonomy software, designed for the missions that actually deploy.</h1>
+      <p class="tagline">Leva Nu Pty Ltd is the Australian parent company behind <a href="https://sture.io">Sture</a>, the mission-to-machine platform for autonomous mobile machines across air, ground, and water.</p>
+      <p class="meta">Building from Brisbane &nbsp;·&nbsp; AUKUS Pillar 2</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="about">
+      <h2>About Leva Nu.</h2>
+      <p>Leva Nu was founded to close the gap between mission intent and deployed machine. Autonomous mobile systems &mdash; drones, ground robots, surface vessels &mdash; fail at integration because the disciplines that build them rarely share a single source of design truth. We build software that does.</p>
+      <p>The company operates as an Australian Pty Ltd, headquartered in Brisbane, with a deliberate focus on AUKUS Pillar 2 advanced-capability programs and AU-aligned defence and dual-use customers.</p>
+    </section>
+
+    <section class="product">
+      <p class="section-label">Our product</p>
+      <h2>Sture &mdash; mission-to-machine for autonomous mobile machines.</h2>
+      <p>A validation and coordination layer for teams building drones, ground robots, and autonomous watercraft. Sture keeps the whole machine aligned as the design evolves &mdash; flagging integration failures at design time, when changes still cost hours instead of months.</p>
+      <div class="product-card">
+        <span class="product-card__kicker">Flagship product</span>
+        <h3 class="product-card__title">Sture</h3>
+        <p class="product-card__body">Mission-to-machine platform for autonomous systems across air, ground, and water. Three-layer architecture: LLM-driven specification, deterministic engine, LLM-driven solution advisor.</p>
+        <a class="product-card__link" href="https://sture.io">sture.io &rarr;</a>
+      </div>
+    </section>
+
+    <section class="company">
+      <h2>Company.</h2>
+      <p>Leva Nu Pty Ltd is incorporated in Australia and is the contracting entity for all Sture engagements.</p>
+      <dl class="facts">
+        <div class="fact">
+          <dt>Legal name</dt>
+          <dd>Leva Nu Pty Ltd</dd>
+        </div>
+        <div class="fact">
+          <dt>ACN</dt>
+          <dd>694 850 747</dd>
+        </div>
+        <div class="fact">
+          <dt>ABN</dt>
+          <dd>20 694 850 747</dd>
+        </div>
+        <div class="fact">
+          <dt>Jurisdiction</dt>
+          <dd>Australia (Pty Ltd)</dd>
+        </div>
+        <div class="fact">
+          <dt>Headquarters</dt>
+          <dd>Brisbane, QLD</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="contact">
+      <h2>Contact.</h2>
+      <p>For commercial, pilot, partnership, or AUKUS-aligned program enquiries.</p>
+      <div class="links">
+        <a href="mailto:mattias@levanu.com.au">mattias@levanu.com.au</a>
+        <a href="https://sture.io">sture.io</a>
+        <a href="https://www.linkedin.com/in/matt-harcourt-3821092b2/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer">&copy; Leva Nu Pty Ltd &nbsp;·&nbsp; ABN 20 694 850 747 &nbsp;·&nbsp; Brisbane, Australia</p>
+    </section>
+
+  </main>
+</body>
+</html>
